@@ -1,0 +1,28 @@
+/* Original dark AI theme is defined in index.html. These additions style the new content. */
+html{scroll-padding-top:100px}
+.hero-label{color:var(--muted);font-size:10px;margin-top:26px}
+.hero h1{font-size:clamp(55px,6.5vw,92px)}
+.skip{position:fixed;top:-100px;left:16px;z-index:100;background:var(--panel);color:var(--txt);padding:15px;border:1px solid var(--cyan);border-radius:8px}
+.skip:focus{top:15px}
+a:focus-visible{outline:3px solid var(--cyan);outline-offset:5px}
+.reveal{opacity:1;transform:none}
+.brand-cover{padding:28px;display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;transition:filter .2s}
+.brand-cover:hover{filter:brightness(1.15)}
+.brand-cover>*{position:relative;z-index:1}
+.brand-cover strong{font-size:44px;line-height:1.1;letter-spacing:-2px;max-width:300px}
+.cover-label{font-size:9px;color:#bacde1}
+.cover-domain{display:flex;justify-content:space-between;border-top:1px solid #8fa9c844;padding-top:14px;font-size:12px;color:#c0d3e8}
+.berber strong{color:var(--cyan)}
+.royal strong{color:#c7b3ff}
+.project-link{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:18px;margin-top:24px;font-size:12px;font-weight:600;color:var(--cyan)}
+.project-link:hover{color:#fff}
+.pfe-details{display:flex;justify-content:center;flex-wrap:wrap;gap:35px;margin-block:30px}
+.pfe-details .mono{font-size:9px;color:var(--muted)}
+.pfe-details strong{display:block;margin-top:9px;font-size:13px;font-weight:500}
+.contact .actions{justify-content:center}
+.contact .pfe-focus{max-width:720px}
+.contact a:not(.btn):hover{text-decoration:underline}
+.skillgroup p{font-size:13px;line-height:1.8}
+@media(max-width:650px){html{scroll-padding-top:135px}.topinner{height:auto;min-height:70px;flex-wrap:wrap;padding-block:15px;gap:15px}nav{display:flex;order:3;width:100%;justify-content:space-between;gap:12px}nav a{font-size:11px}.hero h1{font-size:56px}.hero-label{font-size:8px}.brand-cover strong{font-size:37px}.pfe-details{gap:22px}.pfe-details strong{font-size:12px}.contact .actions{gap:10px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.top,.visual,.skip{display:none}body{background:white;color:#182535}.hero{display:block;min-height:0;padding-block:20px}.hero h1 span{background:none;color:#234c68}.section{padding-block:25px}.project,.entry,.skillgroup{break-inside:avoid}.contact{background:white;padding-block:25px}.contact p,.muted,.entry p{color:#455569}.btn{display:none}}
